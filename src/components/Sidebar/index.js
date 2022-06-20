@@ -2,13 +2,9 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-  faLinkedin,
-} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -44,7 +40,7 @@ const Sidebar = () => (
           rel="noreferrer"
           href="https://www.linkedin.com/feed/?trk=onboarding-landing"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </a>
       </li>
     </ul>
