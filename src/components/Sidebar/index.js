@@ -38,7 +38,7 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/feed/?trk=onboarding-landing"
+          href="https://github.com/wiekusviljoen"
         >
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </a>
