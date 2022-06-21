@@ -1,4 +1,3 @@
-'../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser'
 

@@ -1,4 +1,4 @@
-.contact-form{
+.row{
     width: 100%;
     margin-top: 20px;
 
@@ -28,7 +28,7 @@
      
     }
 
-    li.half{
+    form-control{
         width: 49%;
         margin-left: 2%;
         float: left;
@@ -40,7 +40,7 @@
 
         }
 
-        li.half2{width: 49%;
+        form-control{width: 49%;
             margin-left: 2%;
             float: left;
             clear: none;}
