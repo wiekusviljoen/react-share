@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass] = useState('text-animate')
   const nameArray = [
     'P',
     'e',
