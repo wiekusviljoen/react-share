@@ -2,7 +2,6 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -27,7 +26,7 @@ const About = () => {
         </p>
         <p>
           I work well under pressure. I can take criticism well and improve
-          where is expected
+          where is expected.
         </p>
         <p>
           I am looking for a job as a frontend developer. I would be honored to
@@ -37,9 +36,6 @@ const About = () => {
 
       <div className="stage-cube-cont">
         <div className="cubespinner">
-          <div className="face1">
-            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-          </div>
           <div className="face2">
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
           </div>
