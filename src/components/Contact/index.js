@@ -14,10 +14,17 @@ const Contact = () => {
         e.target,
         'FWX0PEsQrtPVUpbiN'
       )
-      .then((res) => {
-        console.log(res)
-      })
+      .then(
+        () => {
+          alert('Message successfully sent')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message,please try again')
+        }
+      )
   }
+
   return (
     <div>
       <form
