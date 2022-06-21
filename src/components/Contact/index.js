@@ -1,3 +1,5 @@
+import Loader from 'react-loaders'
+
 import './index.scss'
 import emailjs from '@emailjs/browser'
 
@@ -37,6 +39,8 @@ const Contact = () => {
           className="form-control btn btn-primary"
           style={{ marginTop: '30px' }}
         />
+
+        <Loader type="pacman" />
       </form>
     </div>
   )
