@@ -1,8 +1,32 @@
+import { useRef } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const refForm = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_z1sy47v',
+        refForm.current,
+        'FWX0PEsQrtPVUpbiN'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
   return (
     <>
       <div className="containe contact-page">
