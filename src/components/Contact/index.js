@@ -21,18 +21,30 @@ const Contact = () => {
   return (
     <div>
       <form
-        className="row"
+        className="contact-form"
         style={{ margin: '25px 85px 75px 100px' }}
         onSubmit={sendEmail}
       >
-        <label>Name</label>
-        <input type="text" name="name" className="form-control" />
+        <input
+          type="text"
+          name="name"
+          className="form-control"
+          placeholder="Name"
+        />
 
-        <label>Email</label>
-        <input type="email" name="user_mail" className="form-control" />
+        <input
+          type="email"
+          name="user_mail"
+          className="form-control"
+          placeholder="Email"
+        />
 
-        <label>Message</label>
-        <textarea name="message" rows="4" className="form-control" />
+        <textarea
+          name="message"
+          rows="4"
+          className="form-control"
+          placeholder="Message"
+        />
         <input
           type="submit"
           value="Send"
