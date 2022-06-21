@@ -8,3 +8,38 @@
     right: 30%;
     overflow: hidden;
 }
+
+.cubespinner{
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:initial;
+    animation-duration: 3s;
+    transform-style:flat;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+}
+
+@keyframes spincube{
+    from,
+    to{
+        transform: rotateX(deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg);
+
+    }
+
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+
+    }
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);}
+
+        66%{
+            transform: rotateY(-270deg) rotateZ(90deg);
+        }
+        83%{
+            transform: rotateX(90deg);
+        }
+}
