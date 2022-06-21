@@ -1,8 +1,9 @@
 .contact-form{
     width: 50%;
     margin-top: 20px;
-
-
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     ul{
         padding: 0;
         margin: 0;
@@ -17,9 +18,8 @@
         overflow: hidden;
         display: block;
         position: relative;
-        opacity: 0;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        
+       
         clear: both;
         
 
