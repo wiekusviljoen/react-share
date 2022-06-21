@@ -2,7 +2,6 @@ import Loader from 'react-loaders'
 
 import './index.scss'
 import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
 
 const Contact = () => {
   function sendEmail(e) {
@@ -26,10 +25,6 @@ const Contact = () => {
         style={{ margin: '25px 85px 75px 100px' }}
         onSubmit={sendEmail}
       >
-        <AnimatedLetters
-          strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
-          idx={15}
-        />
         <input
           type="text"
           name="name"
@@ -56,9 +51,8 @@ const Contact = () => {
           className="form-control btn btn-primary"
           style={{ marginTop: '30px' }}
         />
-
-        <Loader type="pacman" />
       </form>
+      <Loader type="pacman" />
     </div>
   )
 }
