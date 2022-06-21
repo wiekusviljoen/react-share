@@ -13,10 +13,17 @@ const About = () => {
         </h1>
         <p>
           I am ambitious and creative. I am a team player and I also treat my
-          team with respect.
+          team with respect. I am good with time management and I am goal
+          driven.
         </p>
-        <p>I am good with time management and I am goal driven.</p>
-        <p>I work well under pressure.</p>
+        <p>
+          I work well under pressure. I can take criticism well and improve
+          where is expected
+        </p>
+        <p>
+          I am looking for a job as a frontend developer. I would be honored to
+          work for your company.
+        </p>
       </div>
     </div>
   )
