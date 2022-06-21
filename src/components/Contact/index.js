@@ -1,83 +1,45 @@
-import { useRef } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+'../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-  const refForm = useRef()
-
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault()
 
     emailjs
       .sendForm(
-        'gmail',
+        'service_z4x1kcc',
         'template_z1sy47v',
-        refForm.current,
+        e.target,
         'FWX0PEsQrtPVUpbiN'
       )
-      .then(
-        () => {
-          alert('Message successfully sent')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
+      .then((res) => {
+        console.log(res)
+      })
   }
   return (
-    <>
-      <div className="containe contact-page">
-        <div className="text-zone ">
-          <h1>
-            <AnimatedLetters
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>Please do not hesitate to contact me.</p>
-          <div className="contact-form">
-            <form>
-              <ul>
-                <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
-                </li>
+    <div>
+      <form
+        className="row"
+        style={{ margin: '25px 85px 75px 100px' }}
+        onSubmit={sendEmail}
+      >
+        <label>Name</label>
+        <input type="text" name="name" className="form-control" />
 
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li className="half2">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </div>
-      <Loader type="pacman" />
-    </>
+        <label>Email</label>
+        <input type="email" name="user_mail" className="form-control" />
+
+        <label>Message</label>
+        <textarea name="message" rows="4" className="form-control" />
+        <input
+          type="submit"
+          value="Send"
+          className="form-control btn btn-primary"
+          style={{ marginTop: '30px' }}
+        />
+      </form>
+    </div>
   )
 }
 
