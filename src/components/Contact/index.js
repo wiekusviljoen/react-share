@@ -29,7 +29,7 @@ const Contact = () => {
                     required
                   />
                 </li>
-                <li className="half">
+                <li className="half2">
                   <input
                     type="email"
                     name="email"
