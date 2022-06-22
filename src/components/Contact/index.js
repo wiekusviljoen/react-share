@@ -27,21 +27,18 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <>
       <div className=" contact-page">
         <div className="text-zone">
-          <div>
-            <h1>
-              <AnimatedLetters
-                strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
-                idx={15}
-              />
-            </h1>
-            <p>I hope to hear from you soon. Please feel fee to contact me.</p>
-          </div>
+          <h1>
+            <AnimatedLetters
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
+              idx={15}
+            />
+          </h1>
+          <p>I hope to hear from you soon. Please feel fee to contact me.</p>
         </div>
       </div>{' '}
-      <Loader type="pacman" />{' '}
       <form
         className="contact-form"
         style={{ margin: '25px 85px 75px 100px' }}
@@ -74,7 +71,8 @@ const Contact = () => {
           style={{ marginTop: '30px' }}
         />
       </form>
-    </div>
+      <Loader type="pacman" />{' '}
+    </>
   )
 }
 
