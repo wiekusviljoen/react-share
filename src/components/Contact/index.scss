@@ -77,7 +77,7 @@
         box-sizing:border-box
     }
 
-    .flat-button{
+    .btn-primary{
         color: #ffd700;
         background: 0 0;
         font: 11px;
@@ -87,9 +87,10 @@
         border: 1px solid #ffd700;
         float: right;
         border-radius: 4px;
+        cursor: pointer;
 
     }
     
-
+    
     
 }
