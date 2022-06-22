@@ -38,42 +38,42 @@ const Contact = () => {
               />
             </h1>
             <p>I hope to hear from you soon. Please feel fee to contact me.</p>
-          </div>{' '}
-          <Loader type="pacman" />{' '}
-          <form
-            className="contact-form"
-            style={{ margin: '25px 85px 75px 100px' }}
-            onSubmit={sendEmail}
-          >
-            <input
-              type="text"
-              name="name"
-              className="form-control"
-              placeholder="Name"
-            />
+          </div>
+        </div>
+      </div>{' '}
+      <Loader type="pacman" />{' '}
+      <form
+        className="contact-form"
+        style={{ margin: '25px 85px 75px 100px' }}
+        onSubmit={sendEmail}
+      >
+        <input
+          type="text"
+          name="name"
+          className="form-control"
+          placeholder="Name"
+        />
 
-            <input
-              type="email"
-              name="user_mail"
-              className="form-control"
-              placeholder="Email"
-            />
+        <input
+          type="email"
+          name="user_mail"
+          className="form-control"
+          placeholder="Email"
+        />
 
-            <textarea
-              name="message"
-              rows="4"
-              className="form-control"
-              placeholder="Message"
-            />
-            <input
-              type="submit"
-              value="Send"
-              className="form-control btn btn-primary"
-              style={{ marginTop: '30px' }}
-            />
-          </form>
-        </div>{' '}
-      </div>
+        <textarea
+          name="message"
+          rows="4"
+          className="form-control"
+          placeholder="Message"
+        />
+        <input
+          type="submit"
+          value="Send"
+          className="form-control btn btn-primary"
+          style={{ marginTop: '30px' }}
+        />
+      </form>
     </div>
   )
 }
