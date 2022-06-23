@@ -1,3 +1,5 @@
+import Loader from 'react-loaders'
+
 import './index.scss'
 import emailjs from '@emailjs/browser'
 
@@ -56,6 +58,7 @@ const Contact = () => {
           style={{ marginTop: '30px' }}
         />
       </form>
+      <Loader type="pacman" />{' '}
     </>
   )
 }
