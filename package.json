@@ -1,6 +1,6 @@
 {
-  "homepage": "http://wiekusviljoen.github.io/react-portfolio",
-  "name": "react-portfolio",
+  "homepage": "http://wiekusviljoen.github.io/react-deploy",
+  "name": "react-deploy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
