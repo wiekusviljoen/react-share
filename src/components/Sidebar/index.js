@@ -3,7 +3,7 @@ import './index.scss'
 
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -30,15 +30,24 @@ const Sidebar = () => (
       </NavLink>
     </nav>
     <ul>
-      <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/wiekusviljoen"
-        >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-        </a>
-      </li>
+      <a
+        className="github-link"
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/wiekusviljoen"
+      >
+        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+      </a>
+    </ul>
+    <ul>
+      <a
+        className="facebook-link"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.facebook.com/wiekus.viljoen"
+      >
+        <FontAwesomeIcon icon={faFacebook} color="#0B0BFA" />
+      </a>
     </ul>
   </div>
 )
