@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
@@ -23,28 +23,28 @@ const Home = () => {
   const jobArray = ['D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
   return (
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={22}
-          />
-        </h1>
-        <h2>Frontend Developer / Html / CSS / Javascript</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+    <>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={22}
+            />
+          </h1>
+          <h2>React / Html / CSS / Javascript</h2>
+        </div>
       </div>
-    </div>
+      <Loader type="pacman" />
+    </>
   )
 }
 

@@ -4,7 +4,10 @@
     animation: fadeInUp 1s 1s;
     animation-fill-mode: forwards;
     opacity: 0;
-    float: right;
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    
     
     
     
@@ -33,7 +36,7 @@
     textarea{
         width: 100%;
         border: 0;
-        background: rgb(37, 175, 175);
+        background: #35c0c0;
         height: 50px;
         font-size: 16px;
         color: rgb(7, 7, 7);

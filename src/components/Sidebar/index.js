@@ -36,7 +36,7 @@ const Sidebar = () => (
         rel="noreferrer"
         href="https://github.com/wiekusviljoen"
       >
-        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faGithub} color="#FF0909" />
       </a>
     </ul>
     <ul>

@@ -49,7 +49,7 @@ const Contact = () => {
           name="message"
           rows="4"
           className="form-control"
-          placeholder="Message"
+          placeholder="Please do not hesitate to contact me and tell me what you think about my website."
         />
         <input
           type="submit"
