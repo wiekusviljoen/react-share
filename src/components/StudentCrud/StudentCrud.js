@@ -87,7 +87,7 @@ const [students, setUsers] = useState([]);
     return (
       <div>
         
-      <div class="container mt-4">
+      <div>
         <form>
           <div class="form-group">
            
@@ -131,7 +131,9 @@ const [students, setUsers] = useState([]);
             </button>
             <button class="button" onClick={update}>
               Update
-            </button>
+              </button>
+              
+             
           </div>
         </form>
       </div>
@@ -140,9 +142,9 @@ const [students, setUsers] = useState([]);
       <table class="table table-dark" align="center">
         <thead>
           <tr>
-            <th scope="col">Student Id</th>
-            <th scope="col">Student Name</th>
-            <th scope="col">Course</th>
+            <th scope="col">ID </th>
+            <th scope="col">Name </th>
+            <th scope="col">Course </th>
          
  
             <th scope="col">Option</th>
@@ -153,7 +155,7 @@ const [students, setUsers] = useState([]);
             <tbody>
               <tr>
                 <th scope="row">{student.id} </th>
-                <td>{student.stname}</td>
+                <td> {student.stname} </td>
                 <td>{student.course}</td>
                 
                 <td>
