@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import logo from '../images/logo.jpg'
 import './index.scss'
+
 
 const Home = () => {
   const [letterClass] = useState('text-animate')
@@ -40,9 +42,14 @@ const Home = () => {
               idx={22}
             />
           </h1>
+          
           <h2>React / Html / CSS / Javascript</h2>
+          
+         
         </div>
+        <img className='logo' src={logo} />
       </div>
+      
       <Loader type="pacman" />
     </>
   )
