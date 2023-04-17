@@ -5,10 +5,7 @@
     left: 25%;
     font-size: 20px;
     color: aliceblue;
-
-
-
-
+    animation: fadeIn 1.5s 1.7s backwards;
 
 
 
@@ -16,16 +13,19 @@
 }
 
 .button {
-    top: 30px;
+    top: 35px;
     left: 45%;
     position: relative;
     cursor: pointer;
+    animation: fadeIn 1.5s 1.7s backwards;
+
 }
 
 
 
 table {
-
+    animation: fadeIn 1.5s 1.7s backwards;
+    text-decoration-line: underline;
 
 
     position: relative;

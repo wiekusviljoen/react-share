@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import './index.scss'
+import './index.scss';
+import Loader from 'react-loaders'
 
 function StudentCrud() {
 
@@ -179,7 +180,7 @@ const [students, setUsers] = useState([]);
           );
         })}
       </table>
-        
+      <Loader type="pacman" />
       </div>
     );
   }
