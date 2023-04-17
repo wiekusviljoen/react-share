@@ -7,6 +7,7 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
+  faNode,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
@@ -15,6 +16,7 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="text-zone">
+          <div className='text'>
           <h1>
             <AnimatedLetters
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -33,7 +35,7 @@ const About = () => {
           <p>
             I am looking for a job as a frontend developer. I would be honored
             to work for your company.
-          </p>
+          </p></div>
         </div>
 
         <div className="stage-cube-cont">
